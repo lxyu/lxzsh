@@ -6,14 +6,16 @@ alias ls='ls --color=auto'
 alias l='ls -l'
 alias ll='ls -ahlF'
 
+alias lg='ll | grep'
+alias lh='du -sh * | sort -h'
+
 alias rm="rm -I"
 
 alias df='df -h'
-alias lg='ll | grep'
 alias pg='ps aux | grep'
 
 alias tmux='tmux -2'
-alias tmuxa='tmux a || tmux'
+alias tmuxa='tmux attach -t L || tmux new -s L'
 
 alias rmds='find . -name ".DS_Store" -delete'
 alias rmpyc='find . -name "*.pyc" -delete'
@@ -29,5 +31,3 @@ alias ce='cd ~/workspace/eleme'
 alias cdele='cd ~/workspace/eleme/trunk;'
 alias cdz='cd ~/workspace/eleme/zeus'
 alias cdh='cd ~/workspace/eleme/hades'
-
-alias redis-server='redis-server /usr/local/etc/redis.conf'
