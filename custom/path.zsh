@@ -17,6 +17,10 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -f "$(brew --prefix)/etc/grc.bashrc" ]]; then
         source "$(brew --prefix)/etc/grc.bashrc"
     fi
+
+    if [[ -d "/usr/local/opt/go/libexec/bin" ]]; then
+        export export PATH=$PATH:/usr/local/opt/go/libexec/bin
+    fi
 fi
 
 # Load RVM
