@@ -53,3 +53,6 @@ elif [[ -d "$HOME/.pyenv/bin" ]]; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# go
+export GOPATH="$HOME/workspace/go"
