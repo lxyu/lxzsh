@@ -15,7 +15,7 @@ alias df='df -h'
 alias pg='ps aux | grep'
 
 alias tmux='tmux -2'
-alias tmuxa='tmux attach -t L || tmux new -s L'
+alias tmuxa='tmux attach -t L || tmux -2 new -s L'
 
 alias rmds='find . -name ".DS_Store" -delete'
 alias rmpyc='find . -name "*.pyc" -delete'
