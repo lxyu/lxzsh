@@ -49,7 +49,7 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "$(brew --prefix pyenv)" ]]; then
         export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
         export PATH=$HOME/.pyenv/bin:$PATH
-        eval "$(pyenv init -)"
+        eval "$(pyenv init - zsh)"
         eval "$(pyenv virtualenv-init -)"
     fi
 elif [[ -d "$HOME/.pyenv/bin" ]]; then
