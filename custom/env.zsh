@@ -6,3 +6,5 @@ export LC_ALL=en_US.UTF-8
 
 export EDITOR=vim
 export CLICOLOR=1
+
+unset GREP_OPTIONS
