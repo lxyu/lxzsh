@@ -8,7 +8,7 @@ alias ls='ls --color=auto'
 alias l='ls -l'
 alias ll='ls -ahlF'
 alias lg='ll | grep'
-alias lh='du -sh * | sort -h'
+alias lh='du -sh * .* | sort -h'
 
 alias rm="rm -I"
 alias df='df -h'
