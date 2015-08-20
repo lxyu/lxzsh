@@ -8,3 +8,6 @@ export EDITOR=vim
 export CLICOLOR=1
 
 unset GREP_OPTIONS
+
+# android tmp
+export ANDROID_TMP=~/.android/tmp

@@ -1,4 +1,4 @@
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin/vendor_perl:/usr/sbin:/usr/bin:/sbin:/bin
 
 if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "$(brew --prefix coreutils)" ]]; then
@@ -38,6 +38,9 @@ fi
 if [[ -d "$HOME/tools/android/platform-tools" ]]; then
     export PATH=$HOME/tools/android/platform-tools:$HOME/tools/android/platform:$HOME/tools/android/tools:$PATH
 fi
+if [[ -d "/opt/android-sdk" ]]; then
+    export PATH=/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$PATH
+fi
 
 # test user bin
 if [[ -d "$HOME/bin" ]]; then
@@ -56,6 +59,11 @@ elif [[ -d "$HOME/.pyenv/bin" ]]; then
     export PATH=$HOME/.pyenv/bin:$PATH
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
+fi
+
+# jython
+if [[ -d "/opt/jython" ]]; then
+    export PATH=$PATH:/opt/jython/bin
 fi
 
 # go
