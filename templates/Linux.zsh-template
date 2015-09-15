@@ -32,12 +32,9 @@ DISABLE_AUTO_TITLE="true"
 plugins=(
     archlinux
     autojump
-    bundler
     cabal
-    celery
     colored-man
     colorize
-    command-not-found
     command-not-found
     compleat
     cp
@@ -46,15 +43,12 @@ plugins=(
     extract
     fabric
     gem
-    gem
     git
     github
     npm
     pip
     python
     redis-cli
-    ruby
-    rvm
     supervisor
     systemd
     tmux
