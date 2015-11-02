@@ -1,4 +1,6 @@
-alias vi="vim"
+alias sudo="sudo "
+alias vi="nvim"
+alias vim="nvim"
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

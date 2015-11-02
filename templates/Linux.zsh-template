@@ -54,6 +54,7 @@ plugins=(
     tmux
     vagrant
     vi-mode
+    virtualenvwrapper
 )
 
 source $ZSH/oh-my-zsh.sh
