@@ -1,6 +1,5 @@
 alias sudo="sudo "
 alias vi="nvim"
-alias vim="nvim"
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -35,3 +34,5 @@ alias mutt="proxychains mutt"
 alias paclean="sudo pacman -R $(pacman -Qdtq)"
 
 alias pc="proxychains"
+
+zstyle ':completion:*' hosts off
